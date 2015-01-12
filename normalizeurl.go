@@ -2,9 +2,10 @@ package normalizeurl
 
 import (
 	"fmt"
-	"golang.org/x/net/idna"
 	"net/url"
 	"strings"
+
+	"golang.org/x/net/idna"
 )
 
 var (
