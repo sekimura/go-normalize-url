@@ -27,7 +27,7 @@ func TestNormalize(t *testing.T) {
 	}
 
 	for i := range tests {
-		actual, err := normalize(tests[i].value)
+		actual, err := Normalize(tests[i].value)
 		if err != nil {
 			t.Error("normalize failed", err)
 		}

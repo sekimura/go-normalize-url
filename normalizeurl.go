@@ -15,7 +15,7 @@ var (
 	}
 )
 
-func normalize(s string) (string, error) {
+func Normalize(s string) (string, error) {
 	s = strings.TrimSpace(s)
 	if strings.HasPrefix(s, "//") {
 		s = "http:" + s
