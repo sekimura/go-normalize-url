@@ -15,6 +15,8 @@ var (
 	}
 )
 
+// Normalize url strings
+// http://en.wikipedia.org/wiki/URL_normalization
 func Normalize(s string) (string, error) {
 	s = strings.TrimSpace(s)
 	if strings.HasPrefix(s, "//") {

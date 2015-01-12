@@ -29,10 +29,10 @@ func TestNormalize(t *testing.T) {
 	for i := range tests {
 		actual, err := Normalize(tests[i].value)
 		if err != nil {
-			t.Error("normalize failed", err)
+			t.Error("Normalize() failed", err)
 		}
 		if actual != tests[i].expected {
-			t.Error("normalize did not match expected value", i, actual, tests[i].expected)
+			t.Error("Normalize() did not match expected value", i, actual, tests[i].expected)
 		}
 	}
 }
