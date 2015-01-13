@@ -4,6 +4,6 @@ go:
     - 1.4
     - tip
 install:
-	- go get golang.org/x/net/idna
+    - go get golang.org/x/net/idna
 script:
     - go test -v ./...
